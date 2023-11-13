@@ -59,19 +59,19 @@ namespace EntityFramework.Task
                 Console.WriteLine($"Name: {students.Name} , Surname: {students.Surname}");
             }
 
-            studentServices.DeleteStudent(1);
+            studentServices.DeleteStudent(9);
 
 
             Student updatedstudent = new Student
             {
-                Id = 2,
+                Id = 4,
                 Name = "Wanda",
 
 
             };
             studentServices.UpdateStudent(updatedstudent);
 
-            studentServices.GetStudent(2);
+            studentServices.GetStudent(7);
 
 
 
@@ -89,11 +89,11 @@ namespace EntityFramework.Task
             }
 
 
-            groupServices.DeleteGroup(1);
+            groupServices.DeleteGroup(8);
 
             Group updatedGroup = new Group
             {
-                Id = 2,
+                Id = 4,
                 Name = "ENG_40",
 
 
@@ -102,7 +102,7 @@ namespace EntityFramework.Task
 
 
 
-            groupServices.GetGroup(3);
+            groupServices.GetGroup(5);
 
 
 
