@@ -84,7 +84,7 @@ namespace EntityFramework.Task
 
             Student updatedstudent = new Student
             {
-                Id = 5,
+                Id = 3,
                 Name = "Wanda",
 
 
