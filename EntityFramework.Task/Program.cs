@@ -32,6 +32,18 @@ namespace EntityFramework.Task
                 Surname = "Heybat",
 
             };
+            Student student4 = new Student()
+            {
+                Name = "zahra",
+                Surname = "rzazada",
+
+            };
+            Student student5 = new Student()
+            {
+                Name = "rauf",
+                Surname = "Heybat",
+
+            };
 
             Group group1 = new Group()
             {
@@ -46,6 +58,14 @@ namespace EntityFramework.Task
             {
                 Name = "BSU_ENG"
             };
+            Group group4 = new Group()
+            {
+                Name = "ENG50"
+            };
+            Group group5 = new Group()
+            {
+                Name = "BDU"
+            };
 
             //STUDENTService
 
@@ -59,19 +79,19 @@ namespace EntityFramework.Task
                 Console.WriteLine($"Name: {students.Name} , Surname: {students.Surname}");
             }
 
-            studentServices.DeleteStudent(9);
+            studentServices.DeleteStudent(4);
 
 
             Student updatedstudent = new Student
             {
-                Id = 4,
+                Id = 5,
                 Name = "Wanda",
 
 
             };
             studentServices.UpdateStudent(updatedstudent);
 
-            studentServices.GetStudent(7);
+            studentServices.GetStudent(3);
 
 
 
@@ -89,11 +109,11 @@ namespace EntityFramework.Task
             }
 
 
-            groupServices.DeleteGroup(8);
+            groupServices.DeleteGroup(4);
 
             Group updatedGroup = new Group
             {
-                Id = 4,
+                Id = 5,
                 Name = "ENG_40",
 
 
